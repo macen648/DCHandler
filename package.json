@@ -1,6 +1,6 @@
 {
   "name": "dchandler",
-  "version": "0.0.2-1",
+  "version": "0.0.2-2",
   "description": "Discord bot handler",
   "main": "index.js",
   "scripts": {},
@@ -9,7 +9,12 @@
     "url": "https://github.com/macen648/DCHandler"
   },
   "keywords": [
-    "Handler"
+    "discord",
+    "bot",
+    "handler",
+    "dchandler",
+    "discord.js",
+    "command"
   ],
   "author": "Macen",
   "license": "MIT",

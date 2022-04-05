@@ -29,7 +29,8 @@ module.exports = {
 
     //**
     // This is the structure of the document used to store the server prefix within mongoDB
-        const guildSchema = mongoose.Schema({ 
+        const guildSchema = mongoose.Schema({
+            _id: { 
                 type: String,
                 required: true
             },

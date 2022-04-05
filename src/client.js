@@ -9,7 +9,7 @@ class Client{
         if (!client) throw new Error("Missing Discord Client.") 
         if (!options) throw new Error("Missing options.") 
         if (!options.commandPath) throw new Error(`[commandPath] is missing. Specify command directory: 'commandPath': "" in options.`) 
-        if (!options.mongoPath) throw new Error(`[mongoPath] is missing. If you wish to not use DB, specify: 'useNoDB: true' in options. If this is an error check to see if mongo path is correct.`) 
+        if (!options.mongoPath && !options.useNoDB) throw new Error(`[mongoPath] is missing. If you wish to not use DB, specify: 'useNoDB: true' in options. If this is an error check to see if mongo path is correct.`) 
 
         this.DiscordClient = client
         this.mongoPath = options.mongoPath

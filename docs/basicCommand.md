@@ -13,7 +13,7 @@ module.exports = {
     aliases: [],
     execute(client, message, args) {// Any code put inside the execute call back will be executed when the command is ran.
         message.react("🏓")
-        return message.channel.send(`Last ping ${ms(Date.now() - client.ws.shards.first().lastPingTimestamp, { long: true })} ago: **${client.ws.ping}ms** 🛰️`)
+        return message.channel.send(`**${client.ws.ping}ms** 🛰️`)
     },
 }
 ```

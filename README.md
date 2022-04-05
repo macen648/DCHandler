@@ -94,6 +94,7 @@ module.exports = {
     //--
     // This is the structure of the document used to store the server prefix within mongoDB.
         const guildSchema = mongoose.Schema({ 
+            _id: {
                 type: String,
                 required: true
             },
@@ -137,6 +138,9 @@ module.exports = {
 ```
 
 ## Extra Resources
+- My discord bot template:
+    - https://github.com/macen648/discordBotTemplate
+
 - Worn off keys: 
      - https://www.youtube.com/channel/UChPrh75CmPP9Ig6jISPnfNA
      - https://www.youtube.com/watch?v=JMmUW4d3Noc&list=PLaxxQQak6D_f4Z5DtQo0b1McgjLVHmE8Q&ab_channel=WornOffKeys (How to Discord.js playlist)
