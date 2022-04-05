@@ -36,6 +36,7 @@ const client = new Client({
 const handler = new Handler.HandlerClient(client, {// Pass in discord.js client and options.
     commandPath: "commands", // commands folder.
     mongoPath: "", // MongoDBPath.
+    //useNoDB: true, // Specify 'useNoDB: true,' If you wish not to use DB and use only default prefix.
     PREFIX: "$" // Default bot prefix.
 })
 
@@ -138,13 +139,17 @@ module.exports = {
 ## Extra Resources
 - Worn off keys: 
      - https://www.youtube.com/channel/UChPrh75CmPP9Ig6jISPnfNA
-     - https://www.youtube.com/watch?v=JMmUW4d3Noc&list=PLaxxQQak6D_f4Z5DtQo0b1McgjLVHmE8Q&ab_channel=WornOffKeys
+     - https://www.youtube.com/watch?v=JMmUW4d3Noc&list=PLaxxQQak6D_f4Z5DtQo0b1McgjLVHmE8Q&ab_channel=WornOffKeys (How to Discord.js playlist)
+
+- The Net Ninja:
+     - https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg
+     - https://www.youtube.com/watch?v=bxsemcrY4gQ&ab_channel=TheNetNinja (How to setup mongoDB)
 
 - Discord documentation:
      - https://discord.js.org/#/
 
 - w3schools:
-    - https://www.w3schools.com/js/
+    - https://www.w3schools.com/js/ (js)
 
 ## Me
  - Discord: macen#0001
