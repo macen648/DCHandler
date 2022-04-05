@@ -31,9 +31,11 @@ class MessageHandler{
 
             const cmd = client.commands.get(command) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(command))
 
-            if (cmd) cmd.execute(client, message, args)
+            if (cmd) cmd.execute(client, message, args).catch(error => {
+                console.log(`Command '${command}' exited with Error`)
+                console.log(error) 
+            })
         })
-
     }
 }
 
