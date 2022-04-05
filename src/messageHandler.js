@@ -1,11 +1,28 @@
+const guildSchema = require('./util/guildModel')
+const mongo = require('../src/util/mongo')
+
 class MessageHandler{
     constructor(client, options = {}){
         client.on('messageCreate', async message => {
             if (message.author.bot) return
             if (message.channel.type === 'dm') return
 
-            var PREFIX = options.PREFIX
+            var PREFIX 
 
+            if (options.useNoDB == true) PREFIX = options.PREFIX
+            else {
+                await mongo(options.mongoPath).then(async mongoose => {
+                    try {
+                        const result = await guildSchema.findOne({
+                            _id: message.guild.id
+                        })
+                        PREFIX = result ? result.PREFIX : options.PREFIX
+                    } finally {
+                        mongoose.connection.close()
+                    }
+                })
+
+            }
 
             if (message.content.indexOf(PREFIX) !== 0) return
 
