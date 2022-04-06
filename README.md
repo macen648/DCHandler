@@ -155,6 +155,10 @@ module.exports = {
 - w3schools:
     - https://www.w3schools.com/js/ (js)
 
+## Todo:
+- Make subFolders available within the command folder.
+- Helper utils, such as better embed and bot info and uptime fetures.
+
 ## Me
  - Discord: macen#0001
  - Github: https://github.com/macen648
