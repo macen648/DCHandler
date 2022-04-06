@@ -2,7 +2,7 @@
 [![NPM Badge](https://nodei.co/npm/dchandler.png?downloads=true&stars=true)](https://nodei.co/npm/dchandler)
 
 ## About
-DCHandler is the simple and straight to the point command handler to both help get your discord bot running, as well as allowing full control over everything. Skip the cluttered mess of other handlers and get straight to the point. DCHandler is mostly object-oriented and allows the use of [Discord.js](https://discord.js.org/#/) v13, and provides an easy to use and convenient command structure. For further information head over to the [Documentation](https://definitelymaceman.gitbook.io/dchandler/reference/classes).
+DCHandler is the simple and straight to the point command handler to both help get your discord bot running, as well as allowing full control over everything. Skip the cluttered mess of other handlers and get straight to the point. DCHandler is mostly object-oriented and allows the use of [Discord.js](https://discord.js.org/#/) v13, and provides an easy to use and convenient command structure. For further information head over to the [Documentation](https://definitelymaceman.gitbook.io/dchandler/).
 
 ## Features
 * Light weight and simple.
