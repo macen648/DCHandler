@@ -160,7 +160,7 @@ module.exports = {
 
 ## Todo:
 - Make subFolders available within the command folder.
-- Helper utils, such as better embed and bot info and uptime fetures.
+- Helper utils, such as better embed and bot info and uptime features.
 
 ## Me
  - Discord: macen#0001

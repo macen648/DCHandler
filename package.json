@@ -1,6 +1,6 @@
 {
   "name": "dchandler",
-  "version": "0.0.3-2",
+  "version": "0.0.3-3",
   "description": "Discord bot handler",
   "main": "index.js",
   "scripts": {},
@@ -19,9 +19,9 @@
   "author": "Macen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/macen648/DCHandler/issues"
+    "url": "https://definitelymaceman.gitbook.io/dchandler/todo/bugs"
   },
-  "homepage": "https://github.com/macen648/DCHandler",
+  "homepage": "https://definitelymaceman.gitbook.io/dchandler/",
   "dependencies": {
     "discord.js": "^13.6.0",
     "mongoose": "^6.2.9"
