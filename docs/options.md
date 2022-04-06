@@ -14,7 +14,7 @@ const handler = new Handler.HandlerClient(client, {// Pass in discord.js client 
     commandPath: "commands", // commands folder.
     PREFIX: "$" // Default bot prefix.
     mongoPath: "", // MongoDB Path.
-    noUseDB: false, // If you wish not to use mongoDB make true.
+    useNoDB: false, // If you wish not to use mongoDB make true.
     showLogs: true, // If you dont want bot logs make false.
     customActivity: {name: 'This is a activity message', type: 'WATCHING'}, // If you wish to change the default activity. 
     noShowActivity: false //If youd rather not use the built in activity make true.
