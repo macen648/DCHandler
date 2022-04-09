@@ -1,16 +1,31 @@
+/**
+ * @Ready Start up.
+ */
 class Ready{
     constructor(client, options){
      
+        this.client = client
+        /**
+         * Discord client
+         * @type <DiscordClient>
+         */
+
+        this.options = options
+        /**
+         * dchandler config options
+         * @type <Object>
+         */
+
+
         client.on('ready', client => {
             
-            if (!options.noShowActivity) client.user.setActivity(options.customActivity.name, { type: `${options.customActivity.type}` })
+            if (!this.options.noShowActivity) client.user.setActivity(this.options.customActivity.name, { type: `${this.options.customActivity.type}` })
             else client.user.setPresence({ activity: null })
 
-            if (!options.showLogs) return
+            if (!this.options.showLogs) return
 
             console.log(`Client ${client.user.username} is online!`)
-            console.log(`Client ${client.user.username} now listening for commands with local prefix ${options.PREFIX}`)
-        
+            console.log(`Client ${client.user.username} now listening for commands with local prefix ${this.options.PREFIX}`)
         })   
     }
 }

@@ -1,4 +1,4 @@
-Basic command
+# Basic command
 ```js
 module.exports = {
 /**

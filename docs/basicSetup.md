@@ -1,4 +1,5 @@
-Basic setup
+# Basic setup
+
 ```js
 const {Client, Intents} = require('discord.js')
 const Handler = require('dchandler')
