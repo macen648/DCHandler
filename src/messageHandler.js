@@ -32,7 +32,7 @@ class MessageHandler{
             if (message.channel.type === 'dm') return
 
 
-            if (this.options.useNoDB == true) this.PREFIX = this.options.PREFIX
+            if (!this.options.mongoPath) this.PREFIX = this.options.PREFIX
             else {
                 await mongo(this.options.mongoPath).then(async mongoose => {
                     try {
