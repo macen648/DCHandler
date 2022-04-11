@@ -2,8 +2,6 @@ const CommandLoader = require('./loader')
 const MessageHandler = require('./messageHandler')
 const Ready = require('./ready')
 
-
-
 /**
  * @client The heart of dchandler.
  * */

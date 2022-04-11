@@ -1,6 +1,6 @@
 {
   "name": "dchandler",
-  "version": "0.0.4-pre-release",
+  "version": "0.0.4",
   "description": "Discord bot handler",
   "main": "index.js",
   "scripts": {},
